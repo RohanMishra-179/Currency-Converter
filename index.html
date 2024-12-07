@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="currency-converter-title">
+        <h1>Currency Converter</h1>
+    </div>
+    <div class="currency-converter">
+        <h2>Enter Your Conversion</h2>
+        <div class="converter">
+            <select id="from-currency">
+                <option value="USD">USD - United States Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound</option>
+                <option value="INR">INR - Indian Rupee</option> <!-- Add more currencies as needed -->
+            </select> 
+            <input type="number" id="amount" placeholder="Enter amount"> 
+            <select id="to-currency">
+                <option value="USD">USD - United States Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound</option>
+                <option value="INR">INR - Indian Rupee</option> <!-- Add more currencies as needed -->
+            </select>
+        </div>
+        <button class="convert" id="convert">Convert</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
